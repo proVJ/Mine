@@ -4,7 +4,7 @@ import { IonFooter, IonToolbar, IonTitle } from "@ionic/angular/standalone";
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css'],
+  styleUrls: ['./footer.component.scss'],
   imports: [IonTitle, IonToolbar, IonFooter]
 })
 export class FooterComponent implements OnInit {

@@ -3,7 +3,7 @@ import { IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent,
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+  styleUrls: ['./header.component.scss'],
   imports: [IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle]
 })
 export class HeaderComponent implements OnInit {
