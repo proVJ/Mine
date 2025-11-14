@@ -1,8 +1,8 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent, IonFooter } from '@ionic/angular/standalone';
-import { HeaderComponent } from "../components/shared/header/header/header.component";
-import { FooterComponent } from "../components/shared/footer/footer/footer.component";
+import { HeaderComponent } from "../components/shared/header/header.component";
+import { FooterComponent } from "../components/shared/footer/footer.component";
 
 @Component({
   selector: 'app-folder',
