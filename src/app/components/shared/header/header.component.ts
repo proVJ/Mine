@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent, IonFooter } from '@ionic/angular/standalone';
 @Component({
   selector: 'app-header',
@@ -7,11 +8,11 @@ import { IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent,
   imports: [IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle]
 })
 export class HeaderComponent implements OnInit {
-folder: any;
-
-  constructor() { }
+public folder!: string;
+  private activatedRoute = inject(ActivatedRoute);
+  constructor() {}
 
   ngOnInit() {
+    this.folder = this.activatedRoute.snapshot.paramMap.get('id') as string;
   }
-
 }
